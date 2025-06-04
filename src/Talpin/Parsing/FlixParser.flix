@@ -28,7 +28,7 @@ mod Talpin.Parsing.FlixParser {
                 loop(Exp.App(e, e1))
             } else {
                 whiteSpace(sc);
-                if (at(";", sc) and canSemi#canSemi) {
+                if (at(";", sc) nd canSemi#canSemi) {
                     expect(";", "parseExp", sc);
                     let e1 = parseExp(sc, canSemi);
                     loop(Exp.Let("_", e, e1))
