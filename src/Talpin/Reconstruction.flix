@@ -222,7 +222,7 @@ mod Talpin.Reconstruction {
             case other => bug!(other |> toString)
         };
         // PAPER ERROR: effect should be the variable, not the effect
-        (comp, app(comp)(Type.Arrow(a, z, a1)), Effect.Empty, app(s1)(k + constraint(upperBound = zSubst, ef)))
+        comp, app(comp)(Type.Arrow(a, z, a1)), Effect.Empty, app(s1)(k + constraint(upperBound = zSubst, ef)))
     }
 
 
