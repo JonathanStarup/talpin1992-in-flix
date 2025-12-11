@@ -1,3 +1,5 @@
+name: Test on Flix Nightly
+
 on:
   pull_request:
     branches: [ main ]
