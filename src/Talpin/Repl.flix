@@ -10,7 +10,7 @@ mod Talpin.Repl {
     use Talpin.Data.Effect
     use Sys.Console
     use Util.Util
-    
+
     pub def main(): Unit \ IO = run {
         println("-- REPL READY (':exit' to exit) --");
         println("Write a single line expression and I will type it");

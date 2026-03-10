@@ -5,7 +5,7 @@ mod Talpin.RunFile {
     use Talpin.Data.Subst
     use Sys.Env
     use Util.Util
-    
+
     pub def checkFileArg(): Result[RichString, Unit] \ IO =
         run {
             match Env.getArgs() {
