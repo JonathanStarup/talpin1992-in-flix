@@ -3,8 +3,9 @@ mod Talpin.RunFile {
     use Talpin.Reconstruction
     use Talpin.EffectSolver
     use Talpin.Data.Subst
+    use Sys.Env
     use Util.Util
-
+    
     pub def checkFileArg(): Result[RichString, Unit] \ IO =
         run {
             match Env.getArgs() {
