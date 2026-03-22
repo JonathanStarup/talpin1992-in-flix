@@ -29,9 +29,4 @@ mod Util.Util {
         loop(n, Nil)
     }
 
-    pub def fileReadRunWithAbort(f: Unit -> b \ ef): b \ ef - FileRead + {Abort, IO} =
-        match FileRead.runWithIO(f) {
-            case Ok(v) => v
-            case Err(_ioError) => Abort.abort(Formattable.format("IoError"))
-        }
 }
