@@ -23,8 +23,8 @@ mod Talpin.Reconstruction {
     use Talpin.EffectSolver
     use Talpin.Data.Subst
     use Talpin.FreshName
-    use Util.Util.init
-    use Util.Util
+    use Utils.Utils.init
+    use Utils.Utils
 
     use Functor.map
     use Foldable.toList

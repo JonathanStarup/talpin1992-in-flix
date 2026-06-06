@@ -1,4 +1,4 @@
-mod Util {
+mod Utils {
 
 pub struct StringCursor[r] {
     mut p: Int32,

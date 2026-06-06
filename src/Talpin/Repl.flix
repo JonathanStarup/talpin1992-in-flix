@@ -9,7 +9,7 @@ mod Talpin.Repl {
     use Talpin.EffectSolver
     use Talpin.Data.Effect
     use Sys.Console
-    use Util.Util
+    use Utils.Utils
 
     pub def main(): Unit \ IO = run {
         println("-- REPL READY (':exit' to exit) --");
