@@ -1,14 +1,14 @@
 mod Talpin.Parsing.FlixParser {
     use Talpin.Data.Exp
-    use Util.StringCursor
-    use Util.StringCursor.peekChar
-    use Util.StringCursor.nthChar
-    use Util.StringCursor.remaining
-    use Util.StringCursor.eat
-    use Util.StringCursor.at
-    use Util.StringCursor.take
-    use Util.StringCursor.dropWhile
-    use Util.StringCursor.dropWhile!
+    use Utils.StringCursor
+    use Utils.StringCursor.peekChar
+    use Utils.StringCursor.nthChar
+    use Utils.StringCursor.remaining
+    use Utils.StringCursor.eat
+    use Utils.StringCursor.at
+    use Utils.StringCursor.take
+    use Utils.StringCursor.dropWhile
+    use Utils.StringCursor.dropWhile!
 
     pub def parse(s: String): Exp \ Abort = region local {
         let sc = StringCursor.mk(local, '&', s);
